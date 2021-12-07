@@ -48,7 +48,7 @@ const BookingModal = ({openBooking, handleBookingClose,booking,date,setBookingSu
       }
       //send to server
       //console.log(appointment);
-      fetch('https://enigmatic-beach-73337.herokuapp.com/appointments',{
+      fetch('http://localhost:5000/appointments',{
         method:'POST',
         headers:{
           'content-type':'application/json'

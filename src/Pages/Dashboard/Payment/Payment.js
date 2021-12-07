@@ -11,7 +11,7 @@ const Payment = () => {
     const { appointmentId } = useParams();
     const [appointment, setAppointment] = useState({});
     useEffect(() => {
-        fetch(`https://enigmatic-beach-73337.herokuapp.com/appointments/${appointmentId}`)
+        fetch(`http://localhost:5000/appointments/${appointmentId}`)
             .then(res => res.json())
             .then(data => setAppointment(data));
     }, [appointmentId]);
